@@ -32,10 +32,25 @@ const tagOneThroughNine = ocr`
 
 [Commit]()
 
-## The Start of Real work
+## The Start of Real work - an OCR class
 
 I may only have a little bit working in the next half-hour, but I'll try!
 
 We'd like to build up a character-recognition routine, test it, then build up to recognizing 9 characters. One challenge is that our array of lines cuts across each number, so it would be hard to iterate number by number.
 
 Let's start by building some intelligence into our parser, and returning a smarter object from our `ocr` tag than a giant string.. First, we'll 'pre'factor so our tests show that to do a string comparison, we'll need to call toString. [Commit]().
+
+## I can has digits?
+
+We'd like our OCR class to be able to expose an array of digits from the string. And if we are able to isolate the strings of individual digits we'll be able to do this. Let's use TDD to specify how we want to work with this:
+
+```
+describe('OCR class', () => {
+  it ('exposes digit glyphs', () => {
+    expect(tagOneThroughNine.digitGlyphs[0]).toEqual(`
+
+  |
+  |`.substring(1))
+  })
+})
+```

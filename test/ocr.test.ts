@@ -8,7 +8,7 @@ const exampleOneThroughNine = `
 `.substring(1) //
 
 // Allow us a shorthand
-const tagOneThroughNine = ocr`
+const tagOneThroughNine : OCR = ocr`
   _  _     _  _  _  _  _
 | _| _||_||_ |_   ||_||_|
 ||_  _|  | _||_|  ||_| _|
@@ -23,5 +23,14 @@ describe('Sanity Check', () => {
 
     // Test our shorthand works so we dont have to do substring(1) everywhere
     expect(exampleOneThroughNine).toEqual(tagOneThroughNine.toString())
+  })
+})
+
+describe('OCR class', () => {
+  it ('exposes digit glyphs', () => {
+    expect(tagOneThroughNine.digitGlyphs[0]).toEqual(`
+
+  |
+  |`)
   })
 })
