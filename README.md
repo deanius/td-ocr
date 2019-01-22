@@ -16,7 +16,7 @@ This netted me a TypeScript project (for no particular reason, but it's trending
 
 ## Test it up
 
-Tests were in place, so I started by playing with multiline ES6 strings to see if they worked like I hoped for. [Commit]()
+Tests were in place, so I started by playing with multiline ES6 strings to see if they worked like I hoped for. [Commit](https://github.com/deanius/td-ocr/commit/fd42bc8)
 
 They worked yay! But I didn't like the `substring(1)` nonsense, so I followed some [Wes Bos advice](https://wesbos.com/tagged-template-literals/) and created an ES6 tagged template literal.
 
@@ -30,7 +30,7 @@ const tagOneThroughNine = ocr`
 `
 ```
 
-[Commit]()
+[Commit](https://github.com/deanius/td-ocr/commit/1b9ee85f)
 
 ## The Start of Real work - an OCR class
 
@@ -54,3 +54,8 @@ describe('OCR class', () => {
   })
 })
 ```
+
+And then we'll provide a hard-coded implementation for now, until we write the next test case. [Commit](https://github.com/deanius/td-ocr/commit/59e3c9)
+
+A few minutes to go... Let's neaten out our implementation.
+
