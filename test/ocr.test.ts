@@ -33,6 +33,13 @@ describe('Sanity Check', () => {
     expect(line1).toHaveLength(27)
     expect(line2).toHaveLength(27)
     expect(line3).toHaveLength(27)
+    
+    const ocr1 = tagOneThroughNine.toString().split("\n")[0]
+    const ocr2 = tagOneThroughNine.toString().split("\n")[1]
+    const ocr3 = tagOneThroughNine.toString().split("\n")[2]
+    expect(ocr1).toHaveLength(27)
+    expect(ocr2).toHaveLength(27)
+    expect(ocr3).toHaveLength(27)
   })
 })
 
