@@ -59,3 +59,6 @@ And then we'll provide a hard-coded implementation for now, until we write the n
 
 A few minutes to go... Let's neaten out our implementation.
 
+And, I had to spend some time debugging my editor's desire to remove whitespace, but I'm glad I caught that.. I think I'll have the actual implementation soon - under the 2 hour limit for sure. Elapsed time 1 hour!
+
+[Commit](https://github.com/deanius/td-ocr/commit/5f0c6d)
