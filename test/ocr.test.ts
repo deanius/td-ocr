@@ -1,14 +1,16 @@
-import DummyClass from "../src/ocr"
+import OCR from '../src/ocr'
 
-/**
- * Dummy test
- */
-describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy()
-  })
+const exampleOneThroughNine = `
+  _  _     _  _  _  _  _
+| _| _||_||_ |_   ||_||_|
+||_  _|  | _||_|  ||_| _|
+`.substring(1) //
 
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+describe('Sanity Check', () => {
+  it('compares two multiline strings', () => {
+    expect(exampleOneThroughNine).toEqual(exampleOneThroughNine)
+
+    // Ensure we dont have an extra newline the spec says 4 lines
+    expect(exampleOneThroughNine.split('\n')).toHaveLength(4)
   })
 })
