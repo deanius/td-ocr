@@ -40,11 +40,15 @@ describe('Sanity Check', () => {
     expect(ocr1).toHaveLength(27)
     expect(ocr2).toHaveLength(27)
     expect(ocr3).toHaveLength(27)
+    
+    expect(ocr1.substring(6,9)).toEqual(' _ ')
   })
 })
 
 describe('OCR class', () => {
   it('exposes digit glyphs', () => {
     expect(tagOneThroughNine.digitGlyphs[0]).toEqual(digitTexts[1])
+    expect(tagOneThroughNine.digitGlyphs).toHaveLength(9)
+    expect(tagOneThroughNine.digitGlyphs[1]).toEqual(digitTexts[2])
   })
 })

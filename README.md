@@ -79,5 +79,9 @@ Now, when good testing libraries show failures, they show the expected value. It
 1. Make fake assertions that fail and show us what we got
 1. Copy the actual values back into the test (if they were right)
 
-Let's take a crack at this:
+When we take a crack at this, we see that nothing broke - so far so good..
+
+[Commit](https://github.com/deanius/td-ocr/commit/91ca8c6)
+
+So let's push our luck, and assert the number 2... 
 
