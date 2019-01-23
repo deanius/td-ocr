@@ -1,8 +1,14 @@
-export const digitTexts = {
-  '1': `
+export const glyph1 = `
    
   |
-  |`.substring(1),
+  |`.substring(1)
+
+export const glyphsToNumbers = {
+  [glyph1]: 1
+}
+
+export const digitTexts = {
+  '1': glyph1,
   '2': `
  _ 
  _|
@@ -31,6 +37,7 @@ export default class OCR {
   private originalString: string
   private originalLines: string[]
   public digitGlyphs: string[]
+  public digits: number[]
 
   constructor(text: string) {
     this.originalString = text
@@ -44,6 +51,8 @@ export default class OCR {
         return this.originalLines[lineNum].substring(i*3, i*3+3)
       }).join("\n")
     }
+    
+    this.digits = this.digitGlyphs.map(glyph => 1)
 }
 
   toString() {
