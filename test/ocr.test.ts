@@ -16,6 +16,13 @@ const tagOneThroughNine: OCR = ocr`
   ||_  _|  | _||_|  ||_| _|
 `
 
+//prettier-ignore
+const tagOneThroughFour: OCR = ocr`
+    _  _    
+  | _| _||_|
+  ||_  _|  |
+`
+
 describe('Sanity Check', () => {
   it('compares two multiline strings', () => {
     expect(exampleOneThroughNine).toEqual(exampleOneThroughNine)
@@ -69,5 +76,11 @@ describe('OCR class', () => {
     expect(tagOneThroughNine.digits[3]).toEqual(4)
     expect(tagOneThroughNine.digits[4]).toEqual(5)
     expect(tagOneThroughNine.digits[5]).toEqual(6)
+  })
+  it('works on shorter strings', () => {
+    expect(tagOneThroughFour.digits[0]).toEqual(1)
+    expect(tagOneThroughFour.digits[1]).toEqual(2)
+    expect(tagOneThroughFour.digits[2]).toEqual(3)
+    expect(tagOneThroughFour.digits[3]).toEqual(4)
   })
 })

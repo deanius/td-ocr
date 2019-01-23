@@ -1,4 +1,4 @@
-# OCR Kata Submission for Test Double
+# OCR Kata in ES6
 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Greenkeeper badge](https://badges.greenkeeper.io/alexjoverm/typescript-library-starter.svg)](https://greenkeeper.io/)
@@ -91,6 +91,8 @@ It looks like this approach will work, so let's round it out! We grow our assert
 
 [Commit](https://github.com/deanius/td-ocr/commit/7347fc6)
 
+# Hour 2 
+
 As I returned to this, and eyeing that my laptop only has 26% battery left (now 22%!), I decided to pivot slightly to minimize risk. Let's actually do a digit conversion to make sure we can use multiline strings as the keys in an Object.. 
 
 Ok that looks good. After making sure the tests failed, and then correcting them, we can [Commit](https://github.com/deanius/td-ocr/commit/6919341)
@@ -102,3 +104,16 @@ I love how TypeScript helps me do TDD by showing me with a red wiggly underline 
 It seems now there's only the mechanical process of storing each glyph in a variable, and including it in the lookup, as well as covering the 1-9 example in tests..
 
 We may have a surprise or two yet (what fun would it be if we didn't!), but I'm going to assume it's going to be just a couple commits now..
+
+Or, it's just 1 [Commit](https://github.com/deanius/td-ocr/commit/d77c52b)!
+
+## Bulletproofing
+
+Alas, at 13% battery, and just about 2 hours time spent, there are some things I'd like to have gotten to. For one, does this actually work with strings shorter than 9 glyphs wide, as I intended, or was that premature generalization? (Hint: It works!)
+
+And, even before getting into checksums, as part 2 demands, I'd probably also like to throw in some assertions that throw meaningful errors if the input text can definitely not be parsed - such as if each line is not the same length.
+
+## Conclusion
+
+I hope you enjoy this solution and explanation, narrated in real-time.
+I loved the chance to use ES6 template tags, and I'm even more a fan of TypeScript now.
