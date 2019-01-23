@@ -46,8 +46,8 @@ describe('Sanity Check', () => {
 describe('OCR class', () => {
   it('exposes digit glyphs', () => {
     expect(tagOneThroughNine.digitGlyphs[0]).toEqual(`
-
+   
   |
-  |`)
+  |`.substring(1))
   })
 })

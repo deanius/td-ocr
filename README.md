@@ -62,3 +62,8 @@ A few minutes to go... Let's neaten out our implementation.
 And, I had to spend some time debugging my editor's desire to remove whitespace, but I'm glad I caught that.. I think I'll have the actual implementation soon - under the 2 hour limit for sure. Elapsed time 1 hour!
 
 [Commit](https://github.com/deanius/td-ocr/commit/5f0c6d)
+
+## Each digit
+
+After a break of a couple hours, and with only 30 minutes to spare, I wonder how close I can come to finishing this... Where we left off, we had hard-coded the number 1 as a digit glyph. Let's see if we take positions 0-2 of each line of the real account number if we match up with our test assertion. If so, we'll commit.
+
