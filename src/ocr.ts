@@ -1,3 +1,10 @@
+export const digitTexts = {
+  '1': `
+   
+  |
+  |`.substring(1)
+};
+
 export default class OCR {
   private originalString: string
   private originalLines: string[]

@@ -65,6 +65,9 @@ And, I had to spend some time debugging my editor's desire to remove whitespace,
 
 ## Each digit
 
-After a break of a couple hours, and with only 30 minutes to spare, I wonder how close I can come to finishing this... Where we left off, we had hard-coded the number 1 as a digit glyph. Let's see if we take positions 0-2 of each line of the real account number if we match up with our test assertion. If so, we'll commit.
+After a break of a couple hours, and with only 30 minutes to spare, I wonder how close we can come to finishing this... Where we left off, we had hard-coded the number 1 as a digit glyph. Let's see if we take positions 0-2 of each line of the real account number if we match up with our test assertion. If so, we'll commit.
 
 It worked! [Commit](https://github.com/deanius/td-ocr/commit/caa8f4e)
+
+So the end could be in sight, but we know we'll need string representations for each digit for matching, so let's refactor our test, and include representations for other digits:
+

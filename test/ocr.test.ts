@@ -1,4 +1,4 @@
-import OCR from '../src/ocr'
+import { default as OCR, digitTexts } from '../src/ocr'
 import ocr from '../src/tag'
 
 //prettier-ignore
@@ -45,9 +45,6 @@ describe('Sanity Check', () => {
 
 describe('OCR class', () => {
   it('exposes digit glyphs', () => {
-    expect(tagOneThroughNine.digitGlyphs[0]).toEqual(`
-   
-  |
-  |`.substring(1))
+    expect(tagOneThroughNine.digitGlyphs[0]).toEqual(digitTexts[1])
   })
 })
