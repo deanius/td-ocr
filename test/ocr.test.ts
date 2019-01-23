@@ -50,5 +50,17 @@ describe('OCR class', () => {
     expect(tagOneThroughNine.digitGlyphs[0]).toEqual(digitTexts[1])
     expect(tagOneThroughNine.digitGlyphs).toHaveLength(9)
     expect(tagOneThroughNine.digitGlyphs[1]).toEqual(digitTexts[2])
+    expect(tagOneThroughNine.digitGlyphs[2]).toEqual(digitTexts[3])
+    expect(tagOneThroughNine.digitGlyphs[3]).toEqual(digitTexts[4])
+    // expect(tagOneThroughNine.digitGlyphs[4]).toEqual(digitTexts[5])
+    // expect(tagOneThroughNine.digitGlyphs[5]).toEqual(digitTexts[6])
+    // expect(tagOneThroughNine.digitGlyphs[6]).toEqual(digitTexts[7])
+    // expect(tagOneThroughNine.digitGlyphs[7]).toEqual(digitTexts[8])
+    // expect(tagOneThroughNine.digitGlyphs[8]).toEqual(digitTexts[9])
+
+
+
+
+
   })
 })

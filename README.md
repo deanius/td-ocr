@@ -83,5 +83,11 @@ When we take a crack at this, we see that nothing broke - so far so good..
 
 [Commit](https://github.com/deanius/td-ocr/commit/91ca8c6)
 
-So let's push our luck, and assert the number 2... 
+So let's push our luck, and assert the number 2... And we got it! It helped us to refactor our loop a bit, but it resulted in clearer variable names anyway. 
+
+[Commit](https://github.com/deanius/td-ocr/commit/d86abf4)
+
+It looks like this approach will work, so let's round it out! First with assertions...
+
+[Commit](https://github.com/deanius/td-ocr/commit/)
 
