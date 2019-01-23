@@ -93,7 +93,7 @@ It looks like this approach will work, so let's round it out! We grow our assert
 
 As I returned to this, and eyeing that my laptop only has 26% battery left (now 22%!), I decided to pivot slightly to minimize risk. Let's actually do a digit conversion to make sure we can use multiline strings as the keys in an Object.. 
 
-Ok that looks good. After making sure the tests failed, and then correcting them, we can [Commit](https://github.com/deanius/td-ocr/commit/)
+Ok that looks good. After making sure the tests failed, and then correcting them, we can [Commit](https://github.com/deanius/td-ocr/commit/6919341)
 
 I love how TypeScript helps me do TDD by showing me with a red wiggly underline how a field I refer to in a test does not exist in the subject under test.
 

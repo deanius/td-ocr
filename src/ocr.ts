@@ -2,35 +2,62 @@ export const glyph1 = `
    
   |
   |`.substring(1)
+export const glyph2 = `
+ _ 
+ _|
+|_ `.substring(1)
+export const glyph3 = `
+ _ 
+ _|
+ _|`.substring(1)
+ export const glyph4 =  `
+   
+|_|
+  |`.substring(1)
+export const glyph5 = `
+ _ 
+|_ 
+ _|`.substring(1)
+ 
+ export const glyph6 = `
+ _ 
+|_ 
+|_|`.substring(1)
+ export const glyph7 = `
+ _ 
+  |
+  |`.substring(1)
+ export const glyph8 = `
+ _ 
+|_|
+|_|`.substring(1)
+ export const glyph9 = `
+ _ 
+|_|
+ _|`.substring(1)
 
 export const glyphsToNumbers = {
-  [glyph1]: 1
+  [glyph1]: 1,
+  [glyph2]: 2,
+  [glyph3]: 3,
+  [glyph4]: 4,
+  [glyph5]: 5,
+  [glyph6]: 6,
+  [glyph7]: 7,
+  [glyph8]: 8,
+  [glyph9]: 9
 }
 
 export const digitTexts = {
   '1': glyph1,
-  '2': `
- _ 
- _|
-|_ `.substring(1),
-  '3': `
- _ 
- _|
- _|`.substring(1),
-  '4': `
-   
-|_|
-  |`.substring(1),
-  // '5': `
-  // `.substring(1),
-  // '6': `
-  // `.substring(1),
-  // '7': `
-  // `.substring(1),
-  // '8': `
-  // `.substring(1),
-  // '9': `
-  // `.substring(1),
+  '2': glyph2,
+  '3': glyph3,
+  '4': glyph4,
+  '5': glyph5,
+  '6': glyph6,
+  '7': glyph7,
+  '8': glyph8,
+  '9': glyph9
 };
 
 export default class OCR {
@@ -52,7 +79,7 @@ export default class OCR {
       }).join("\n")
     }
     
-    this.digits = this.digitGlyphs.map(glyph => 1)
+    this.digits = this.digitGlyphs.map(glyph => glyphsToNumbers[glyph])
 }
 
   toString() {
