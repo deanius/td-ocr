@@ -87,7 +87,7 @@ So let's push our luck, and assert the number 2... And we got it! It helped us t
 
 [Commit](https://github.com/deanius/td-ocr/commit/d86abf4)
 
-It looks like this approach will work, so let's round it out! First with assertions...
+It looks like this approach will work, so let's round it out! We grow our assertions, and then we have to stop again.. There's not much to go, so we'll leave it here.
 
-[Commit](https://github.com/deanius/td-ocr/commit/)
+[Commit](https://github.com/deanius/td-ocr/commit/7347fc6)
 
