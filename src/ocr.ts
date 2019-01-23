@@ -13,16 +13,14 @@ export default class OCR {
   constructor(text: string) {
     this.originalString = text
     this.originalLines = text.split("\n")
+    this.digitGlyphs = []
 
-    this.digitGlyphs = [
-      [
-        // LEFTOFF more real parse, actually
-        this.originalLines[0].substring(0,3),
-        this.originalLines[1].substring(0,3),
-        this.originalLines[2].substring(0,3)
-      ].join("\n")
-    ]
-  }
+    for(let i=0; i< this.originalLines[0].length; i = i+3) {
+      this.digitGlyphs[i] = [0,1,2].map(lineNum => {
+        return this.originalLines[lineNum].substring(i*3, i*3+3)
+      }).join("\n")
+    }
+}
 
   toString() {
     return this.originalString

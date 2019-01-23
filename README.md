@@ -69,5 +69,15 @@ After a break of a couple hours, and with only 30 minutes to spare, I wonder how
 
 It worked! [Commit](https://github.com/deanius/td-ocr/commit/caa8f4e)
 
-So the end could be in sight, but we know we'll need string representations for each digit for matching, so let's refactor our test, and include representations for other digits:
+So the end could be in sight, but we know we'll need string representations for each digit for matching, so let's refactor our test.
+
+[Commit](https://github.com/deanius/td-ocr/commit/7995cf4)
+
+Now, when good testing libraries show failures, they show the expected value. It may be our quickest route to a asserting the desired digit glyphs, if we
+
+1. Generalize our algorithm
+1. Make fake assertions that fail and show us what we got
+1. Copy the actual values back into the test (if they were right)
+
+Let's take a crack at this:
 
